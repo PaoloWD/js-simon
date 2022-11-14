@@ -1,9 +1,11 @@
 const randomNumArray = [];
 const userNum = [];
 
-for (let i = 0; i < 5; i++) {
+while (randomNumArray.length < 5) {
   const pushNum = randomNum();
-  randomNumArray.push(pushNum);
+  if (!randomNumArray.includes(pushNum)) {
+    randomNumArray.push(pushNum);
+  }
 }
 
 generateDivRandom();
@@ -45,6 +47,6 @@ function generateDivUser() {
 }
 
 function randomNum() {
-  num = Math.floor(Math.random() * 101);
+  num = Math.floor(Math.random() * 10);
   return num;
 }
