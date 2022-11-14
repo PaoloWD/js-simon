@@ -1,7 +1,6 @@
 const randomNumArray = [];
 const userNum = [];
 
-generateNumRandom();
 generateDivRandom();
 generateDivUser();
 
@@ -15,6 +14,7 @@ function generateNumRandom() {
 }
 
 function generateDivRandom() {
+  generateNumRandom();
   const containerRandomEl = document.querySelector(".container-random");
 
   for (i = 0; i < randomNumArray.length; i++) {
