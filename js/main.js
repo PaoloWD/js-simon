@@ -29,7 +29,7 @@ function generateDivUser() {
     const containerUserEL = document.querySelector(".container-user");
     while (userNum.length < randomNumArray.length) {
       const numUser = prompt("inserisci numero");
-      userNum.push(numUser);
+      userNum.push(parseInt(numUser));
     }
     for (i = 0; i < randomNumArray.length; i++) {
       const user = document.createElement("div");
