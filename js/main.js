@@ -1,6 +1,6 @@
 const randomNumArray = [];
 const userNum = [];
-let check = [];
+const check = [];
 
 generateDivRandom();
 generateDivUser();
