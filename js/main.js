@@ -1,5 +1,5 @@
 const randomNumArray = [];
-let userNum = [];
+const userNum = [];
 
 for (let i = 0; i < 5; i++) {
   const pushNum = randomNum();
