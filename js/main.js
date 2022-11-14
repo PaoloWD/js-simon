@@ -24,7 +24,7 @@ function generateDivRandom() {
 
     containerRandomEl.append(number);
   }
-  setTimeout(function timer() {
+  setTimeout(function () {
     containerRandomEl.innerHTML = "";
   }, 5000);
 }
