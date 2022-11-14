@@ -26,7 +26,7 @@ function generateDivRandom() {
   }
   setTimeout(function () {
     containerRandomEl.innerHTML = "";
-  }, 5000);
+  }, 30000);
 }
 
 function generateDivUser() {
@@ -42,7 +42,7 @@ function generateDivUser() {
       containerUserEL.append(user);
     }
     checkArray(randomNumArray, userNum);
-  }, 6000);
+  }, 31000);
 }
 
 function checkArray(Arr1, Arr2) {
