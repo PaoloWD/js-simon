@@ -1,5 +1,6 @@
 const randomNumArray = [];
 const userNum = [];
+let check = [];
 
 generateDivRandom();
 generateDivUser();
@@ -26,7 +27,7 @@ function generateDivRandom() {
   }
   setTimeout(function () {
     containerRandomEl.innerHTML = "";
-  }, 30000);
+  }, 3000);
 }
 
 function generateDivUser() {
@@ -42,14 +43,20 @@ function generateDivUser() {
       containerUserEL.append(user);
     }
     checkArray(randomNumArray, userNum);
-  }, 31000);
+  }, 3100);
 }
 
-function checkArray(Arr1, Arr2) {
-  if (JSON.stringify(Arr1) === JSON.stringify(Arr2)) {
-    alert("hai inserito i numeri giusti");
+function checkArray(arr1, arr2) {
+  if (JSON.stringify(arr1) === JSON.stringify(arr2)) {
+    alert(`Hai inserito ${arr1.length} numeri esatti: ${arr1}`);
   } else {
-    alert("hai inserito i numeri sbagliati");
+    for (i = 0; i < arr1.length; i++) {
+      if (arr1[i] === arr2[i]) {
+        const check2 = arr1[i];
+        check.push(check2);
+      }
+    }
+    alert(`Hai inserito ${check.length} numeri esatti: ${check}`);
   }
 }
 
