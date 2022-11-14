@@ -54,6 +54,6 @@ function checkArray(Arr1, Arr2) {
 }
 
 function randomNum() {
-  num = Math.floor(Math.random() * 10);
+  const num = Math.floor(Math.random() * 10);
   return num;
 }
