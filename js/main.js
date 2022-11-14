@@ -1,15 +1,18 @@
 const randomNumArray = [];
 const userNum = [];
 
-while (randomNumArray.length < 5) {
-  const pushNum = randomNum();
-  if (!randomNumArray.includes(pushNum)) {
-    randomNumArray.push(pushNum);
-  }
-}
-
+generateNumRandom();
 generateDivRandom();
 generateDivUser();
+
+function generateNumRandom() {
+  while (randomNumArray.length < 5) {
+    const pushNum = randomNum();
+    if (!randomNumArray.includes(pushNum)) {
+      randomNumArray.push(pushNum);
+    }
+  }
+}
 
 function generateDivRandom() {
   const containerRandomEl = document.querySelector(".container-random");
