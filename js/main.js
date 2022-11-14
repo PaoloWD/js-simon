@@ -41,12 +41,16 @@ function generateDivUser() {
       user.innerHTML = userNum[i];
       containerUserEL.append(user);
     }
-    if (JSON.stringify(randomNumArray) === JSON.stringify(userNum)) {
-      alert("hai inserito i numeri giusti");
-    } else {
-      alert("hai inserito i numeri sbagliati");
-    }
+    checkArray(randomNumArray, userNum);
   }, 6000);
+}
+
+function checkArray(Arr1, Arr2) {
+  if (JSON.stringify(Arr1) === JSON.stringify(Arr2)) {
+    alert("hai inserito i numeri giusti");
+  } else {
+    alert("hai inserito i numeri sbagliati");
+  }
 }
 
 function randomNum() {
